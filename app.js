@@ -113,6 +113,8 @@ app.put("/api/expenses/:id", async (req, res) => {
     }
 });
 
+//Delete all
+
 app.delete("/api/expenses/:id", async (req, res) => {
     try {
         const { id } = req.params;
