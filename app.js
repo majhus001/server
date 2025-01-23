@@ -50,7 +50,7 @@ const expenseSchema = new mongoose.Schema({
 const expenseModel = mongoose.model('expense-tracker', expenseSchema);    
 
 mongoose.connect(mongourl).then(() => {
-    console.log('MongoDB connected');
+    console.log('MongoDB Atlas connected');
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
     }); 
